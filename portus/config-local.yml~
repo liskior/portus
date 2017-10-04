@@ -1,34 +1,9 @@
-display_name:
-  enabled: true
 machine_fqdn:
   value: "portus.liskior.me"
-signup:
-  enabled: false
-delete:
-  enabled: true
-
-ldap:
-  enabled: true
-  hostname: ldap.forumsys.com
-  port: 389
-  method: "plain"
-  base: "cn=read-only-admin,dc=example,dc=com"
-  filter: ""
-  uid: "uid"
-
-  authentication:
-    enabled: false
-    bind_dn: "ou=mathematicians,dc=example,dc=com"
-    password: "password"
-
-  guess_email:
-    enabled: false
-    attr: ""
-
 email:
   from: "admin@liskior.me"
   name: "Portus"
-  reply_to: "admin@liskior.me"  
+  reply_to: "admin@liskior.me"
   smtp:
     enabled: false
     address: "smtp.yandex.ru"
