@@ -1,3 +1,3 @@
-mkdir -p /portus/{certs,data}
-certbot certonly —agree-tos —standalone -d portus.liskior.me —email admin@liskior.me
-cp /etc/letsencrypt/live/portus.liskior.me/* /portus/certs/
+mkdir -p {certs,data}
+sudo certbot certonly --agree-tos --standalone -d docker.force.fm --email admin@force.fm
+cp /etc/letsencrypt/live/portus.liskior.me/* certs/
