@@ -7,8 +7,8 @@ storage:
     blobdescriptor: inmemory
   filesystem:
     rootdirectory: /var/lib/registry
-  delete:
-    enabled: true
+delete:
+  enabled: true
 auth:
   token:
     realm: https://portus.liskior.me/v2/token
@@ -35,4 +35,3 @@ notifications:
       timeout: 500ms
       threshold: 5
       backoff: 1s
-

@@ -13,7 +13,10 @@ make sure private images (the ones requiring special rights also for
 ## Deploying
 1. run sh script
     ./start.sh
-2. docker-compose up
+2. docker-compose up -d
+
+##LDAP
+
 
 ## Overview
 
