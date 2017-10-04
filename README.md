@@ -10,17 +10,12 @@ instance of Docker registry. User's privileges are taken into account to
 make sure private images (the ones requiring special rights also for
 `docker pull`) are not shown to unauthorized personnel.
 
-# Deploying
+## Deploying
+1. run sh script
+    ./start.sh
+2. docker-compose up
 
-You can deploy Portus in a wide variety of ways. Most commonly:
-
-- Using **containers**: in the `examples` directory you can find different
-containerized deployment examples (e.g. with Kubernetes).
-- A **bare metal** setup: you can either do it by
-[installing the RPM](http://port.us.org/docs/setups/1_rpm_packages.html) or
-installing [everything yourself with NGinx and Puma](http://port.us.org/docs/setups/3_nginx_bare_metal.html).
-
-# Overview
+## Overview
 
 In this video you can get an overview of some of the features and capabilities
 of Portus.
