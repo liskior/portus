@@ -1,6 +1,3 @@
-signup:
-  enabled: false
-
 # This file contains the default values for the configuration of this
 # application. In order to change them, write your own config-local.yml file
 # (it will be ignored by git). For more info, you can read the dedicated page
@@ -106,7 +103,7 @@ first_user_admin:
 # This is ignored if LDAP is enabled. Read more about this here:
 # http://port.us.org/features/disabling_signup.html
 signup:
-  enabled: true
+  enabled: false
 
 # By default require ssl to be enabled when running on production
 check_ssl_usage:
