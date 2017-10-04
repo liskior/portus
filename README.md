@@ -15,6 +15,8 @@ make sure private images (the ones requiring special rights also for
     ./start.sh
 2. docker-compose up -d
 
+![images/portus_registry](images/portus_registry.png)
+
 ##LDAP
 
 
