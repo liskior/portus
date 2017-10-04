@@ -1,2 +1,2 @@
-certbot certonly —agree-tos —standalone -d demo.com —email admin@demo.com
+certbot certonly —agree-tos —standalone -d portus.liskior.me —email admin@liskior.me
 cp /etc/letsencrypt/live/portus.liskior.me/* /portus/certs/
