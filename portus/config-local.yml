@@ -41,9 +41,9 @@ delete:
 # be able to use Portus. Take a look at the documentation of LDAP support in our
 # online docs: http://port.us.org/features/2_LDAP-support.html.
 ldap:
-  enabled: false
+  enabled: true
 
-  hostname: "ldap_hostname"
+  hostname: "www.zflexldap.com"
   port: 389
 
   # Available options: "plain", "simple_tls" and "starttls". The default is
@@ -51,7 +51,7 @@ ldap:
   method: "plain"
 
   # The base where users are located (e.g. "ou=users,dc=example,dc=com").
-  base: ""
+  base: "dc=zflexsoftware,dc=com"
 
   # User filter (e.g. "mail=george*").
   filter: ""
@@ -61,9 +61,9 @@ ldap:
 
   # LDAP credentials used to search for a user.
   authentication:
-    enabled: false
-    bind_dn: ""
-    password: ""
+    enabled: true
+    bind_dn: "cn=ro_admin,ou=sysadmins,dc=zflexsoftware,dc=com"
+    password: "zflexpass"
 
   # Portus needs an email for each user, but there's no standard way to get
   # that from LDAP servers. You can tell Portus how to get the email from users
