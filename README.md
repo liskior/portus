@@ -18,7 +18,7 @@ make sure private images (the ones requiring special rights also for
 ![images/portus_registry](images/portus_registry.png)
 
 ## LDAP
-<img heigh="600" src='images/ldap.png' />
+<img heigh="400" src='images/ldap.png' />
 http://port.us.org/docs/Configuring-Portus.html#ldap-support
 
 If enabled, then only users of the specified LDAP server will be able to use Portus.
