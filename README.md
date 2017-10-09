@@ -12,7 +12,8 @@ make sure private images (the ones requiring special rights also for
 
 ## Deploying
 1. run sh script
-    ./start.sh
+
+        ./start.sh
 2. docker-compose up -d
 
 ![images/portus_registry](images/portus_registry.png)
