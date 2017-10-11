@@ -11,13 +11,13 @@ storage:
       enabled: true
 auth:
   token:
-    realm: https://portus.liskior.me/v2/token
-    service: portus.liskior.me
-    issuer: portus.liskior.me
+    realm: https://portus.staging.teco.edu/v2/token
+    service: portus.staging.teco.edu
+    issuer: portus.staging.teco.edu
     rootcertbundle: /certs/fullchain.pem
 http:
   addr: :5000
-  host: portus.liskior.me:5000
+  host: portus.staging.teco.edu:5000
   tls:
     certificate: /certs/fullchain.pem
     key: /certs/privkey.pem
@@ -31,7 +31,7 @@ health:
 notifications:
   endpoints:
     - name: portus
-      url: https://portus.liskior.me/v2/webhooks/events
+      url: https://portus.staging.teco.edu/v2/webhooks/events
       timeout: 500ms
       threshold: 5
       backoff: 1s
