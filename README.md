@@ -13,18 +13,18 @@ make sure private images (the ones requiring special rights also for
 ## Deploying
 1. Clone
 
-git clone git@github.com:liskior/portus.git
-git checkout teco
+        git clone git@github.com:liskior/portus.git
+        git checkout teco
 
 2. Run sh script
 
-./start.sh
+        ./start.sh
 
 3. Tune mail config in portus/config-local.yml
 
 4. Run
 
-docker-compose up -d
+        docker-compose up -d
 
 <img src="images/portus_registry.png" width="500">
 
