@@ -29,6 +29,8 @@ make sure private images (the ones requiring special rights also for
 
 ## LDAP
 
+To test you can use login "riemann" and password "password".
+
 If enabled, then only users of the specified LDAP server will be able to use Portus.
 
     portus/config-local.yml
