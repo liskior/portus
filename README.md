@@ -26,7 +26,7 @@ make sure private images (the ones requiring special rights also for
         docker-compose up -d
 
 
-![portus_registry](images/portus_registry.png = 400)
+![portus_registry](images/portus_registry.png =400)
 <p align="center">
 <img heigh="400" src='images/portus_registry.png' />
 </p>
