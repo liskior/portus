@@ -14,6 +14,7 @@ make sure private images (the ones requiring special rights also for
 1. Clone
 
 git clone git@github.com:liskior/portus.git
+git checkout teco
 
 2. Run sh script
 
