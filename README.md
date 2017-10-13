@@ -14,7 +14,6 @@ make sure private images (the ones requiring special rights also for
 1. Clone
 
         git clone git@github.com:liskior/portus.git
-        git checkout teco
 
 2. Run sh script
 
@@ -30,27 +29,29 @@ make sure private images (the ones requiring special rights also for
 
 ## LDAP
 
+To test you can use login "riemann" and password "password".
+
 If enabled, then only users of the specified LDAP server will be able to use Portus.
 
-portus/config-local.yml
+    portus/config-local.yml
 
-ldap:
-enabled: false
-hostname: "ldap_hostname"
-port: 389
-method: "plain"
-base: ""
-filter: ""
-uid: "uid"
+    ldap:
+        enabled: false
+        hostname: "ldap_hostname"
+        port: 389
+        method: "plain"
+        base: ""
+        filter: ""
+        uid: "uid"
 
-authentication:
-enabled: false
-bind_dn: ""
-password: ""
+    authentication:
+    enabled: false
+    bind_dn: ""
+    password: ""
 
-guess_email:
-enabled: false
-attr: ""
+    guess_email:
+    enabled: false
+    attr: ""
 
 Some notes:
 
@@ -84,5 +85,3 @@ of Portus.
 [![preview](https://cloud.githubusercontent.com/assets/22728/9274870/897410de-4299-11e5-9ebf-c6ecc1ae7733.png)](https://www.youtube.com/watch?v=hGqvYVvdf7U)
 
 Info and video is from [Portus site](http://port.us.org/documentation.html).
-
-
