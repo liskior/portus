@@ -25,6 +25,8 @@ make sure private images (the ones requiring special rights also for
 
         docker-compose up -d
 
+
+![portus_registry](images/portus_registry.png = 400)
 <p align="center">
 <img heigh="400" src='images/portus_registry.png' />
 </p>
@@ -85,5 +87,5 @@ of Portus.
 
 [![preview](https://cloud.githubusercontent.com/assets/22728/9274870/897410de-4299-11e5-9ebf-c6ecc1ae7733.png)](https://www.youtube.com/watch?v=hGqvYVvdf7U)
 
-Info and video is from http://port.us.org/docs.
+Info and video is from [Portus site](http://port.us.org/documentation.html).
 
