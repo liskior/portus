@@ -25,11 +25,7 @@ make sure private images (the ones requiring special rights also for
 
         docker-compose up -d
 
-<img src="images/portus_registry.png" width="120">
-
-<p align="center">
-<img heigh="400" src='images/portus_registry.png' />
-</p>
+<img src="images/portus_registry.png" width="500">
 
 ## LDAP
 
