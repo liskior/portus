@@ -189,3 +189,5 @@ security:
   # This backend is only used for testing purposes, don't use it.
   dummy:
     server: ""
+machine_fqdn:
+  value: "portus.staging.teco.edu"
