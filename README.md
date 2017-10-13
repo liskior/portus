@@ -27,6 +27,8 @@ make sure private images (the ones requiring special rights also for
 
 
 ![portus_registry](images/portus_registry.png =400)
+
+
 <p align="center">
 <img heigh="400" src='images/portus_registry.png' />
 </p>
@@ -78,7 +80,6 @@ enabled where “attr” is empty: for this you need “ldap.base” to have som
 enabled where “attr” is not empty: with this you specify the attribute inside a LDIF record where the email is set.
 If something goes wrong when trying to guess the email, then it just falls back to the default behavior (empty email).
 
-http://port.us.org/docs
 
 ## Overview
 
