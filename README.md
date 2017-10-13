@@ -25,7 +25,7 @@ make sure private images (the ones requiring special rights also for
 
         docker-compose up -d
 
-<img src="https://github.com/favicon.ico" width="48">
+<img src="https://github.com/favicon.ico" width="120">
 
 <p align="center">
 <img heigh="400" src='images/portus_registry.png' />
