@@ -1,4 +1,4 @@
 mkdir -p {certs,data}
 cd portus
-sudo certbot certonly --agree-tos --standalone -d portus.staging.teco.kit --email admin@staging.teco.kit
-cp /etc/letsencrypt/live/portus.staging.teco.kit/* certs/
+sudo certbot certonly --agree-tos --standalone -d portus.liskior.me --email admin@portus.liskior.me
+cp /etc/letsencrypt/live/portus.liskior.me/* certs/
