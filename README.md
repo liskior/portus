@@ -11,41 +11,48 @@ make sure private images (the ones requiring special rights also for
 `docker pull`) are not shown to unauthorized personnel.
 
 ## Deploying
-1. run sh script
+1. Clone
 
-        ./start.sh
-2. docker-compose up -d
+git clone git@github.com:liskior/portus.git
 
-![images/portus_registry](images/portus_registry.png)
+2. Run sh script
+
+./start.sh
+
+3. Tune mail config in portus/config-local.yml
+
+4. Run
+
+docker-compose up -d
+
+<img src="images/portus_registry.png" width="500">
 
 ## LDAP
 
-
-
 If enabled, then only users of the specified LDAP server will be able to use Portus.
 
-    portus/config-local.yml
-    
-    ldap:
-        enabled: false
-        hostname: "ldap_hostname"
-        port: 389
-        method: "plain"
-        base: ""
-        filter: ""
-        uid: "uid"
+portus/config-local.yml
 
-    authentication:
-    enabled: false
-    bind_dn: ""
-    password: ""
+ldap:
+enabled: false
+hostname: "ldap_hostname"
+port: 389
+method: "plain"
+base: ""
+filter: ""
+uid: "uid"
 
-    guess_email:
-    enabled: false
-    attr: ""
-    
+authentication:
+enabled: false
+bind_dn: ""
+password: ""
+
+guess_email:
+enabled: false
+attr: ""
+
 Some notes:
-    
+
 base: The base where users are located (e.g. “ou=users,dc=example,dc=com”).
 
 filter: This option comes in handy when you want to filter even further the results that might be hanging from the base.
@@ -67,7 +74,6 @@ enabled where “attr” is empty: for this you need “ldap.base” to have som
 enabled where “attr” is not empty: with this you specify the attribute inside a LDIF record where the email is set.
 If something goes wrong when trying to guess the email, then it just falls back to the default behavior (empty email).
 
-http://port.us.org/docs/Configuring-Portus.html#ldap-support
 
 ## Overview
 
@@ -75,3 +81,7 @@ In this video you can get an overview of some of the features and capabilities
 of Portus.
 
 [![preview](https://cloud.githubusercontent.com/assets/22728/9274870/897410de-4299-11e5-9ebf-c6ecc1ae7733.png)](https://www.youtube.com/watch?v=hGqvYVvdf7U)
+
+Info and video is from [Portus site](http://port.us.org/documentation.html).
+
+
