@@ -11,16 +11,25 @@ make sure private images (the ones requiring special rights also for
 `docker pull`) are not shown to unauthorized personnel.
 
 ## Deploying
-1. run sh script
+1. Clone
+
+        git clone git@github.com:liskior/portus.git
+        
+2. Run sh script
 
         ./start.sh
-2. docker-compose up -d
+        
+3. Tune mail config in portus/config-local.yml
 
-![images/portus_registry](images/portus_registry.png)
+4. Run
+
+        docker-compose up -d
+
+<p align="center">
+<img heigh="400" src='images/portus_registry.png' />
+</p>
 
 ## LDAP
-
-
 
 If enabled, then only users of the specified LDAP server will be able to use Portus.
 
@@ -67,7 +76,7 @@ enabled where “attr” is empty: for this you need “ldap.base” to have som
 enabled where “attr” is not empty: with this you specify the attribute inside a LDIF record where the email is set.
 If something goes wrong when trying to guess the email, then it just falls back to the default behavior (empty email).
 
-http://port.us.org/docs/Configuring-Portus.html#ldap-support
+http://port.us.org/docs
 
 ## Overview
 
@@ -75,3 +84,6 @@ In this video you can get an overview of some of the features and capabilities
 of Portus.
 
 [![preview](https://cloud.githubusercontent.com/assets/22728/9274870/897410de-4299-11e5-9ebf-c6ecc1ae7733.png)](https://www.youtube.com/watch?v=hGqvYVvdf7U)
+
+Info and video is from http://port.us.org/docs.
+
