@@ -13,6 +13,8 @@ services:
   web:
     image: opensuse/portus:2.2
     container_name: registry-portus
+    env_file:
+      - .env
     volumes:
       - "./certs/fullchain.pem:/certificates/portus-ca.crt:ro"
       - "./certs/privkey.pem:/secrets/portus.key:ro"
@@ -24,7 +26,7 @@ services:
       - DEBUG=false
       - RACK_ENV=production
       - RAILS_ENV=production
-      - PORTUS_MACHINE_FQDN_VALUE=portus.staging.teco.edu
+      - PORTUS_MACHINE_FQDN_VALUE=${PORTUS_MACHINE_FQDN_VALUE}
       - PORTUS_PORTUS_PASSWORD='1234'
       - MARIADB_SERVICE_HOST=db
       - MARIADB_ADAPTER=mysql2
