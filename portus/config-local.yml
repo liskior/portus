@@ -51,7 +51,7 @@ ldap:
   method: "plain"
 
   # The base where users are located (e.g. "ou=users,dc=example,dc=com").
-  base: "ou=mathematicians,dc=example,dc=com"
+  base: "dc=example,dc=com"
 
   # User filter (e.g. "mail=george*").
   filter: ""
