@@ -1,3 +1,4 @@
 mkdir -p {certs,data}
-sudo certbot certonly --agree-tos --standalone -d portus.staging.teco.edu --email admin@staging.teco.edu
-cp /etc/letsencrypt/live/portus.staging.teco.edu/* certs/
+source .env
+sudo certbot certonly --agree-tos --standalone -d $PORTUS_MACHINE_FQDN_VALUE --email $EMAIL
+cp /etc/letsencrypt/live/$PORTUS_MACHINE_FQDN_VALUE/* certs/
