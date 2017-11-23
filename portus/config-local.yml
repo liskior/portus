@@ -190,4 +190,4 @@ security:
   dummy:
     server: ""
 machine_fqdn:
-  value: "portus.staging.teco.edu"
+  value: "${PORTUS_MACHINE_FQDN_VALUE}"
