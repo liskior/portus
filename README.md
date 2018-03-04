@@ -15,13 +15,7 @@ make sure private images (the ones requiring special rights also for
 
         git clone git@github.com:liskior/portus.git
 
-2. Run sh script
-
-        ./start.sh
-
-3. Tune mail config in portus/config-local.yml
-
-4. Run
+2. Run
 
         docker-compose up -d
 
