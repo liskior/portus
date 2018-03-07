@@ -13,7 +13,7 @@ make sure private images (the ones requiring special rights also for
 ## Deploying
 1. Clone
 
-        git clone git@github.com:liskior/portus.git
+        git clone https://github.com/ScaleIT-Org/spe-app-pool
 
 2. Run
 
@@ -22,8 +22,6 @@ make sure private images (the ones requiring special rights also for
 <img src="images/portus_registry.png" width="500">
 
 ## LDAP
-
-To test you can use login "riemann" and password "password".
 
 If enabled, then only users of the specified LDAP server will be able to use Portus.
 
